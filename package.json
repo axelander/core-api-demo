@@ -1,0 +1,28 @@
+{
+  "author": "alexander",
+  "dependencies": {
+    "react-native-electrode-bridge": "1.5.x"
+  },
+  "description": "ERN Generated API for CoreApi",
+  "devDependencies": {
+    "flow-bin": "^0.47.0"
+  },
+  "ern": {
+    "message": {
+      "moduleName": "CoreApi",
+      "namespace": "com.CoreApi.ern",
+      "apiSchemaPath": "/Users/alexander/Desktop/mockswaggerschema.json",
+      "artifactId": "react-native-CoreApi-api"
+    },
+    "moduleType": "ern-api"
+  },
+  "keywords": [
+    "ern-api"
+  ],
+  "main": "javascript/src/index.js",
+  "name": "core-api",
+  "scripts": {
+    "flow": "flow"
+  },
+  "version": "1.0.0"
+}

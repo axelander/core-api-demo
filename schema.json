@@ -1,0 +1,60 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "Leeroy Order",
+    "title": "Order Service",
+    "contact": {
+      "name": "Leeroy Core Team"
+    }
+  },
+  "paths": {
+    "/menus": {
+      "get": {
+        "description": "Returns all menus",
+        "operationId": "findMenus",
+        "parameters": [
+          {
+            "name": "storeId",
+            "in": "query",
+            "description": "The storeId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Menus response",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Menu"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Menu": {
+      "type": "object",
+      "required": [
+        "name",
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "desc": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
